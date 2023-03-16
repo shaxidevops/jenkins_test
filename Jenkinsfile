@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        name= 'Ahmad'
+        name= 'Nawaz Sharif'
     }
     parameters{
         string(name: 'Person', defaultValue: 'Ali Ahmad', description: "This is the dafult name and values for this pipeline")
@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Environment Variables') {
             environment{
-                user= 'Ali'
+                user= 'Nawaz Sharif'
             }
             steps {
                 echo "${BUILD_ID}"

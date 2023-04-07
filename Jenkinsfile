@@ -1,5 +1,5 @@
 pipeline {
-    agent{
+    agent {
         label 'slave'
     }
     environment {
@@ -12,7 +12,6 @@ pipeline {
     stages {
         stage('Shell Commands') {
             steps {
-                sh 'sudo su'
                 sh 'su root'
                 sh 'date'
                 sh 'pwd'
